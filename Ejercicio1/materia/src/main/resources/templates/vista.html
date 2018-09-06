@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Registrar</title>
+  </head>
+  <body style="background-color:#4BE8E8;">
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col">
+        </div>
+        <div class="col-6">
+          <center><h2>!Bienvenido!</h2></center>
+          <center>Seleccione la opción que va a realizar</center>
+          <div class="row mt-5">
+            <div class="col-1"></div>
+            <div class="col">
+              <button id="ir_agregar" class="btn" style="background-color:#4BE8E8;" type="button">
+                <img th:src="@{/img/botones/Selección_001.png}" width="150px"/>
+              </button>
+            </div>
+            <div class="col-1"></div>
+            <div class="col">
+              <button class="btn" style="background-color:#4BE8E8;" type="button">
+                <img  th:src="@{/img/botones/Selección_002.png}" width="150px"/>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      $("#ir_agregar").click(function(){
+        window.location.href = '{% url "registrar" %}'
+      });
+    </script>
+  </body>
+</html>
+   	
+    <script type="text/javascript">
+      $("#ir_agregar").click(function(){
+        window.location.href = '/agregar_materia';
+      });
+    </script>
+  </body>
+</html>
